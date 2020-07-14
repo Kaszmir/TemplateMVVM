@@ -1,4 +1,4 @@
-package com.example.templatemvvm
+package pl.kaszmir.templatemvvm
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
