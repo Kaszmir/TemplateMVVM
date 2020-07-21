@@ -16,7 +16,7 @@ val appModule = module {
      * [LinearLayoutManager] instance to display [RecyclerView] items as a vertical list
      */
 
-    single {
+    factory {
         LinearLayoutManager(androidContext())
     }
 
@@ -25,7 +25,7 @@ val appModule = module {
      * [GridLayoutManager] instance to display [RecyclerView] items in grid
      */
 
-    single {
+    factory {
         GridLayoutManager(
             androidContext(),
             GRID_COLUMN_COUNT
@@ -37,7 +37,7 @@ val appModule = module {
      * [RecyclerView] default item decoration [DividerItemDecoration]
      */
 
-    single {
+    factory {
         DividerItemDecoration(
             androidContext(),
             LinearLayoutManager.VERTICAL
