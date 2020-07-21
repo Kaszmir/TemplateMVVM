@@ -9,6 +9,7 @@ import pl.kaszmir.templatemvvm.BuildConfig
 import pl.kaszmir.templatemvvm.core.app.baseUrl
 import pl.kaszmir.templatemvvm.fatures.data.RickAndMortyApi
 import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
 
 val networkModule = module {
 
@@ -47,6 +48,7 @@ val networkModule = module {
         Retrofit.Builder()
             .baseUrl(baseUrl)
             .client(get<OkHttpClient>())
+            .addConverterFactory(GsonConverterFactory.create())
             .build()
     }
 
