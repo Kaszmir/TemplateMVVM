@@ -1,4 +1,4 @@
-package pl.kaszmir.templatemvvm.fatures.data
+package pl.kaszmir.templatemvvm.fatures.data.remote
 
 
 /**
