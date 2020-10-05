@@ -1,4 +1,4 @@
-package pl.kaszmir.templatemvvm.fatures.data.remote.model
+package pl.kaszmir.templatemvvm.core.api.remote.model
 
 import com.google.gson.annotations.SerializedName
 import pl.kaszmir.templatemvvm.fatures.episodes.domain.model.Origin
