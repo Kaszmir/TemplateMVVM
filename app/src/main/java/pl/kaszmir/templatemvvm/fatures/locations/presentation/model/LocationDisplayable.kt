@@ -1,6 +1,6 @@
-package pl.kaszmir.templatemvvm.fatures.episodes.presentation.model
+package pl.kaszmir.templatemvvm.fatures.locations.presentation.model
 
-import pl.kaszmir.templatemvvm.fatures.episodes.domain.model.Location
+import pl.kaszmir.templatemvvm.fatures.locations.domain.model.Location
 
 data class LocationDisplayable(
     val id: Int,

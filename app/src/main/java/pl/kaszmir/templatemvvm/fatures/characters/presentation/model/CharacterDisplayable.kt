@@ -1,6 +1,8 @@
-package pl.kaszmir.templatemvvm.fatures.episodes.presentation.model
+package pl.kaszmir.templatemvvm.fatures.characters.presentation.model
 
-import pl.kaszmir.templatemvvm.fatures.episodes.domain.model.Character
+import pl.kaszmir.templatemvvm.fatures.characters.domain.model.Character
+import pl.kaszmir.templatemvvm.fatures.episodes.presentation.model.OriginDisplayable
+import pl.kaszmir.templatemvvm.fatures.locations.presentation.model.LocationDisplayable
 
 data class CharacterDisplayable(
     val episodeList: List<String>,
@@ -21,9 +23,13 @@ data class CharacterDisplayable(
         gender = character.gender,
         id = character.id,
         image = character.image,
-        location = LocationDisplayable(character.location),
+        location = LocationDisplayable(
+            character.location
+        ),
         name = character.name,
-        origin = OriginDisplayable(character.origin),
+        origin = OriginDisplayable(
+            character.origin
+        ),
         species = character.species,
         status = character.status,
         type = character.type,

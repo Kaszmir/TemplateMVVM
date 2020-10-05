@@ -1,7 +1,7 @@
 package pl.kaszmir.templatemvvm.fatures.data.remote.model
 
 import com.google.gson.annotations.SerializedName
-import pl.kaszmir.templatemvvm.fatures.episodes.domain.model.Location
+import pl.kaszmir.templatemvvm.fatures.locations.domain.model.Location
 
 
 data class LocationRemote(
@@ -13,13 +13,14 @@ data class LocationRemote(
     @SerializedName("type") val type: String,
     @SerializedName("url") val url: String
 ) {
-    fun toLocation() = Location(
-        id = id,
-        name = name,
-        type = type,
-        dimension = dimension,
-        url = url,
-        residents = residents
-    )
+    fun toLocation() =
+        Location(
+            id = id,
+            name = name,
+            type = type,
+            dimension = dimension,
+            url = url,
+            residents = residents
+        )
 }
 
