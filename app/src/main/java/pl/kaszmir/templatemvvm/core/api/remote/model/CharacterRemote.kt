@@ -4,8 +4,8 @@ import com.google.gson.annotations.SerializedName
 import pl.kaszmir.templatemvvm.fatures.characters.domain.model.Character
 
 
-data class CharacterRemote(
-    @SerializedName("created") val created: String,
+class CharacterRemote(
+    @SerializedName("created") val created: String?,
     @SerializedName("episode") val episodeList: List<String>,
     @SerializedName("gender") val gender: String,
     @SerializedName("id") val id: Int,
