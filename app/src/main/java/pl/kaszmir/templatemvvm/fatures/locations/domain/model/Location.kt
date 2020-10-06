@@ -1,4 +1,4 @@
-package pl.kaszmir.templatemvvm.fatures.episodes.domain.model
+package pl.kaszmir.templatemvvm.fatures.locations.domain.model
 
 data class Location(
     val id: Int,

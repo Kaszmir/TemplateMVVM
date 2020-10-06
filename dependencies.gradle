@@ -9,6 +9,7 @@ ext {
     def retrofitVersion = "2.8.1"
     def okHttpVersion = "4.7.2"
     def roomVersion = "2.2.5"
+    def jupiterVersion = "5.6.2"
 
     kotlin = [
             kotlin : "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
@@ -62,7 +63,15 @@ ext {
 
     test = [
             junit : 'junit:junit:4.12',
-            roomTesting : "androidx.room:room-testing:$roomVersion"
+            roomTesting : "androidx.room:room-testing:$roomVersion",
+            jupiter : "org.junit.jupiter:junit-jupiter-api:$jupiterVersion",
+            jupiterParams : "org.junit.jupiter:junit-jupiter-params:$jupiterVersion",
+            mockk : "io.mockk:mockk:1.10.0",
+            kluent : "org.amshove.kluent:kluent:1.61"
+    ]
+
+    onlyRuntimeTest = [
+            jupiterEngine : "org.junit.jupiter:junit-jupiter-engine:$jupiterVersion"
     ]
 
     androidTest = [

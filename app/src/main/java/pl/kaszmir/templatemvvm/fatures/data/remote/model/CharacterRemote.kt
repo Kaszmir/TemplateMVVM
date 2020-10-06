@@ -1,7 +1,7 @@
 package pl.kaszmir.templatemvvm.fatures.data.remote.model
 
 import com.google.gson.annotations.SerializedName
-import pl.kaszmir.templatemvvm.fatures.episodes.domain.model.Character
+import pl.kaszmir.templatemvvm.fatures.characters.domain.model.Character
 
 
 data class CharacterRemote(
@@ -18,18 +18,19 @@ data class CharacterRemote(
     @SerializedName("type") val type: String,
     @SerializedName("url") val url: String
 ) {
-    fun toCharacter() = Character(
-        episode = episodeList,
-        gender = gender,
-        id = id,
-        image = image,
-        location = location.toLocation(),
-        name = name,
-        origin = origin.toOrigin(),
-        species = species,
-        status = status,
-        type = type,
-        url = url
-    )
+    fun toCharacter() =
+        Character(
+            episode = episodeList,
+            gender = gender,
+            id = id,
+            image = image,
+            location = location.toLocation(),
+            name = name,
+            origin = origin.toOrigin(),
+            species = species,
+            status = status,
+            type = type,
+            url = url
+        )
 }
 
