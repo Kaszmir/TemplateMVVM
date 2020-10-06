@@ -6,8 +6,8 @@ import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import org.koin.dsl.module
 import pl.kaszmir.templatemvvm.BuildConfig
+import pl.kaszmir.templatemvvm.core.api.remote.RickAndMortyApi
 import pl.kaszmir.templatemvvm.core.app.baseUrl
-import pl.kaszmir.templatemvvm.fatures.data.remote.RickAndMortyApi
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 

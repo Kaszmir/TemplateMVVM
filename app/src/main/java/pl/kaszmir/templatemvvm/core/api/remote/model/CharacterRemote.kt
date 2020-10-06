@@ -1,4 +1,4 @@
-package pl.kaszmir.templatemvvm.fatures.data.remote.model
+package pl.kaszmir.templatemvvm.core.api.remote.model
 
 import com.google.gson.annotations.SerializedName
 import pl.kaszmir.templatemvvm.fatures.characters.domain.model.Character
@@ -32,5 +32,7 @@ data class CharacterRemote(
             type = type,
             url = url
         )
+
+    companion object
 }
 

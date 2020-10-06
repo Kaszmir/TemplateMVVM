@@ -58,7 +58,11 @@ ext {
             interceptor : "com.squareup.okhttp3:logging-interceptor:$okHttpVersion"
     ]
 
-    room =  "androidx.room:room-runtime:$roomVersion"
+    room =  [
+            runtime:  "androidx.room:room-runtime:$roomVersion",
+            roomKtx: "androidx.room:room-ktx:$roomVersion"
+    ]
+
     roomCompiler = "androidx.room:room-compiler:$roomVersion"
 
     test = [

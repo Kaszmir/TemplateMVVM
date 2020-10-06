@@ -4,7 +4,7 @@ import io.mockk.coVerify
 import io.mockk.mockk
 import kotlinx.coroutines.GlobalScope
 import org.junit.Test
-import pl.kaszmir.templatemvvm.fatures.locations.LocationRepository
+import pl.kaszmir.templatemvvm.fatures.locations.data.repository.LocationRepository
 
 class GetLocationsUseCaseTest {
 

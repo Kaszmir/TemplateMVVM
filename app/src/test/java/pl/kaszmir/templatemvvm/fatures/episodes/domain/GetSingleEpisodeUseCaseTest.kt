@@ -4,7 +4,7 @@ import io.mockk.coVerify
 import io.mockk.mockk
 import kotlinx.coroutines.GlobalScope
 import org.junit.Test
-import pl.kaszmir.templatemvvm.fatures.episodes.EpisodeRepository
+import pl.kaszmir.templatemvvm.fatures.episodes.data.repository.EpisodeRepository
 
 internal class GetSingleEpisodeUseCaseTest {
 

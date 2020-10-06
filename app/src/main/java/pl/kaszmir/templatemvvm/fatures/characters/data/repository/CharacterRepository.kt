@@ -1,4 +1,4 @@
-package pl.kaszmir.templatemvvm.fatures.characters
+package pl.kaszmir.templatemvvm.fatures.characters.data.repository
 
 import pl.kaszmir.templatemvvm.fatures.characters.domain.model.Character
 

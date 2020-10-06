@@ -1,4 +1,4 @@
-package pl.kaszmir.templatemvvm.fatures.episodes
+package pl.kaszmir.templatemvvm.fatures.episodes.data.repository
 
 import pl.kaszmir.templatemvvm.fatures.episodes.domain.model.Episode
 
