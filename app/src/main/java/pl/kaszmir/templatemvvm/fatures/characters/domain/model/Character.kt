@@ -1,6 +1,5 @@
 package pl.kaszmir.templatemvvm.fatures.characters.domain.model
 
-import pl.kaszmir.templatemvvm.fatures.episodes.domain.model.Origin
 import pl.kaszmir.templatemvvm.fatures.locations.domain.model.Location
 
 data class Character(

@@ -12,9 +12,9 @@ interface EpisodeDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun saveEpisodes(vararg episode: EpisodeCached)
 
-    @Query("SELECT * from EpisodeCached")
+    @Query("SELECT * FROM EpisodeCached")
     suspend fun getEpisodes(): List<EpisodeCached>
 
-    @Query("SELECT * from EpisodeCached where id = :episodeId")
+    @Query("SELECT * FROM EpisodeCached WHERE id = :episodeId")
     suspend fun getSingleEpisode(episodeId: Int): EpisodeCached
 }
