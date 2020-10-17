@@ -5,6 +5,7 @@ import pl.kaszmir.templatemvvm.core.api.remote.model.*
 import pl.kaszmir.templatemvvm.fatures.characters.data.local.model.CharacterCached
 import pl.kaszmir.templatemvvm.fatures.characters.domain.model.Origin
 import pl.kaszmir.templatemvvm.fatures.episodes.data.local.model.EpisodeCached
+import pl.kaszmir.templatemvvm.fatures.episodes.domain.model.Episode
 import pl.kaszmir.templatemvvm.fatures.locations.data.local.model.LocationCached
 import pl.kaszmir.templatemvvm.fatures.locations.domain.model.Location
 
@@ -141,4 +142,14 @@ fun EntityListBackendResponse.Companion.mockedLocationListResponse() = EntityLis
         LocationRemote.mock(),
         LocationRemote.mock()
     )
+)
+
+@TestOnly
+fun Episode.Companion.mock() = Episode(
+    id = 1,
+    name = "test name",
+    airDate = "test air date",
+    episodeCode = "test episode code",
+    characters = emptyList(),
+    url = "test url"
 )

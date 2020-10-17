@@ -7,4 +7,6 @@ data class Episode(
     val characters: List<String>,
     val episodeCode: String,
     val url: String
-)
+) {
+    companion object
+}
